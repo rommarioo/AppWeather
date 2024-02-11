@@ -9,3 +9,10 @@ async function checkWeather () {
     document.querySelector('.current_city').innerHTML = data.name;
 }  
 checkWeather();
+
+document.getElementById('buttonSearch').onclick = butttonClick;
+function butttonClick () {
+   
+    let valueInput = document.getElementById('inputSearch').value;
+    console.log(valueInput)
+}
