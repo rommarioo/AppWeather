@@ -5,6 +5,7 @@ const buttonSearch = document.querySelector('.buttonSearch');
 const containerInfo = document.querySelector('.conteiner-info')
 const imageWeather = document.querySelector('.imageWeather')
 
+
 async function checkWeather (city) {
     const response = await fetch(urlApi + city + `&appid=${keyApi}`);
     
@@ -15,10 +16,11 @@ async function checkWeather (city) {
        const data = await response.json(); 
        console.log (data, "data");
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "&#8451";
-    document.querySelector('.current_city').innerHTML = data.name;
-    document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " км/ч";
+    document.querySelector('.current-city').innerHTML = data.name;
+    document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + "km/h";
     document.querySelector('.vlajnost').innerHTML = data.main.humidity + "%";
-    
+    document.querySelector('.current-weather').innerHTML = data.weather[0].main;
+
     if (data.weather[0].main == "Clear") {
         imageWeather.src = "image/sun.svg";
       } else if (data.weather[0].main == "Rain") {
