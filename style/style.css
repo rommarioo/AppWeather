@@ -2,15 +2,17 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(351deg, rgba(2,0,36,1) 0%, rgba(9,83,121,0.34217436974789917) 0%, rgba(0,212,255,1) 55%);
     background-attachment: fixed;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 80%;
 }
 .conteiner {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
+    
     height: 50vh;
     
 }
@@ -34,7 +36,11 @@ body {
     align-items: center;
 }
 .buttonSearch {
-    margin-bottom: 5px ;
+    
+    padding: 0;
+    border: none;
+    background: none;
+    
 }
 .inputSearch {
     margin: 3px;
@@ -70,4 +76,8 @@ body {
 }    
 .conteiner-search, .conteiner-info {
     background: rgb(255, 255, 255);
+}
+.conteiner-search-line {
+    display: flex;
+    
 }
