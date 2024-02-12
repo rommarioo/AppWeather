@@ -31,6 +31,8 @@ async function checkWeather (city) {
         imageWeather.src = "image/drizzle.svg";
       } else if (data.weather[0].main == "Mist") {
         imageWeather.src = "image/mist.svg";
+      } else if (data.weather[0].main == "Clouds") {
+        imageWeather.src = "image/clouds.svg";
       }
 
     containerInfo.style.display = "flex";
