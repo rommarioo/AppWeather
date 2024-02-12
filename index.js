@@ -25,11 +25,14 @@ async function checkWeather (city) {
         imageWeather.src = "image/rain.svg";
       } else if (data.weather[0].main == "Snow") {
         imageWeather.src = "image/snow.svg";
+      } else if (data.weather[0].main == "Thunderstorm") {
+        imageWeather.src = "image/thunder.svg";
       } else if (data.weather[0].main == "Drizzle") {
-        imageWeather.src = "image/rain.svg";
-      } else if (data.weather[0].main == "Drizzle") {
-        imageWeather.src = "image/rain.svg";
+        imageWeather.src = "image/drizzle.svg";
+      } else if (data.weather[0].main == "Mist") {
+        imageWeather.src = "image/mist.svg";
       }
+
     containerInfo.style.display = "flex";
     }
     
