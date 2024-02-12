@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     <title>Weather App</title>
 </head>
 <body>
     <main>
         <div class="conteiner">
-        <div class="conteiner-search">
-            <h1>Search your country)</h1>
-            <input class="inputSearch" type="text" placeholder="Enter location" value="irkutsk" />
-            <button type="button" class="buttonSearch">Search</button>
+            <div class="conteiner-border">
+                <div class="conteiner-search">
+            <h1>Введите ваш город</h1>
+            <div class="conteiner-search-line">
+                <input class="inputSearch" type="text" placeholder="Enter location" value="irkutsk" />
+                <button type="button" class="buttonSearch">Поиск</button>
+            </div>
+            
         </div>
         <div class="conteiner-info">
-            <h2 class="temp"></h2>
-            <h2 class="current_city"></h2>
-            <h2 class="vlajnost"></h2>
-            <h2 class="wind"></h2>
+            <div class="conteiner-info-lines">
+                <img class="imageWeather" src="" >
+                <h2 class="current_city"></h2>
+            </div>
+            <div class="conteiner-info-lines">
+                <h2>Температура: </h2>
+                <h2 class="temp"></h2>
+            </div>
+            
+            <div class="conteiner-info-lines">
+               <h2>Влажность: </h2>
+                <h2 class="vlajnost"></h2> 
+            </div>
+            
+            <div class="conteiner-info-lines">
+                <h2>Скорость ветра: </h2>
+                <h2 class="wind"></h2>
+            </div> 
+            
         </div>
+            </div>
+        
         </div>
     </main>
     <script src="index.js"></script>
