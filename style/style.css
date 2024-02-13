@@ -30,7 +30,7 @@ body {
     margin-top: 100px;
 }
 .conteiner-info {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
