@@ -27,7 +27,9 @@ body {
 .conteiner-border {
     border: 5px groove;
     border-radius: 10px;
-    
+    -webkit-box-shadow: 10px 13px 16px 0px rgba(34, 60, 80, 0.69);
+-moz-box-shadow: 10px 13px 16px 0px rgba(34, 60, 80, 0.69);
+box-shadow: 10px 13px 16px 0px rgba(34, 60, 80, 0.69);
 }
 .conteiner-info {
     display: none;
