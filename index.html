@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
 
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="conteiner">
-            <div class="conteiner-border">
-                <div class="conteiner-search">
+      <div class="conteiner">
+        <div class="conteiner-border">
+          <div class="conteiner-search">
             <h1>Enter your city</h1>
             <div class="conteiner-search-line">
-                <input class="inputSearch" type="text" placeholder="Enter location" value="irkutsk" />
-                <button type="button" class="buttonSearch"><img src="image/lupa.svg" alt=""></button>
+              <input
+                class="inputSearch"
+                type="text"
+                placeholder="Enter location"
+                value="irkutsk"
+              />
+              <button type="button" class="buttonSearch">
+                <img src="image/lupa.svg" alt="" />
+              </button>
             </div>
-            
-        </div>
-        <div class="conteiner-info">
+          </div>
+          <div class="conteiner-info">
             <div class="conteiner-info-imageText">
-                <div class="container-imageText">
-                   <img class="imageWeather" src="" >
-                    <h6 class="current-weather"></h6> 
-                </div>
-                
-                <h2 class="current-city"></h2>
+              <div class="container-imageText">
+                <img class="imageWeather" src="" />
+                <h6 class="current-weather"></h6>
+              </div>
+
+              <h2 class="current-city"></h2>
             </div>
             <div class="conteiner-info-lines">
-                <h2>Temperature: </h2>
-                <h2 class="temp"></h2>
+              <h2>Temperature:</h2>
+              <h2 class="temp"></h2>
             </div>
-            
+
             <div class="conteiner-info-lines">
-               <h2>Air humidity: </h2>
-                <h2 class="vlajnost"></h2> 
+              <h2>Air humidity:</h2>
+              <h2 class="vlajnost"></h2>
             </div>
-            
+
             <div class="conteiner-info-lines">
-                <h2>Wind speed: </h2>
-                <h2 class="wind"></h2>
-            </div> 
-            
+              <h2>Wind speed:</h2>
+              <h2 class="wind"></h2>
+            </div>
+          </div>
         </div>
-            </div>
-        
-        </div>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
